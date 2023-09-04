@@ -6,7 +6,7 @@ class Mat
 {
 private:
     int *data;
-    int m, n;
+    int m, n,exception;
 
 public:
     Mat(); // 默认构造函数
@@ -77,7 +77,7 @@ int &Mat::at(int i, int j)
     if (i > m || j > n)
     {
         cout << "Wrong index" << endl;
-        return data[0];
+        return exception;
     }
     return data[(i - 1) * n + j - 1];
 }
