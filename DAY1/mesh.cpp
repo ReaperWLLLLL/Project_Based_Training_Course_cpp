@@ -11,6 +11,7 @@ private:
 
 public:
     El2no(int no1Value, int no2Value, int no3Value);
+    El2no();
     ~El2no();
     void set(string name, int nodeNum);
     void set(int no1Value, int no2Value, int no3Value);
