@@ -189,10 +189,10 @@ int main()
     cout << "Below is the test of submat" << endl;
     Mat mat7 = mat5.submat(1, 1, 2, 2);//此处会打印一个2*2的矩阵
     mat7 << mat7;
+    Mat mat8 = mat7.resize(8, 8);
     mat7 = mat5.submat(1, 1, 8, 4);//此处会提示wrong index
     cout << "Below is the test of resize" << endl;
-    Mat mat8 = mat7.resize(8, 8);//此处会打印一个8*8的矩阵
-    mat8 << mat8;
+    mat8 << mat8;//此处会打印一个8*8的矩阵
 
     return 0;
 }
