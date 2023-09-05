@@ -180,6 +180,7 @@ int main()
 {
     cout << "Below is the test of El2no" << endl;
     El2no el2no1(1, 2, 3);
+    //El2no el2no2;
     el2no1.display();
     el2no1.set("no8", 4);
     el2no1.set("no1", 4);
