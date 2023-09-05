@@ -141,7 +141,19 @@ int main(){
     }
     cout << endl;
 
-    cout << "list: list does not support random erase." << endl;
+    list<int>::iterator it1 = li.begin();
+    for (int i = 0; i < 2; i++)
+    {
+        it1++;
+    }
+    li.erase(it1);
+    cout << "list: ";
+    for (list<int>::iterator it1 = li.begin(); it1 != li.end(); it1++)
+    {
+        cout << *it1 << " ";
+    }
+    cout << endl;
+
 
     //在数据结构的尾部增加一个元素4，再次依次输出数据结构中的内容
     cout << "****push_back 4****" << endl;

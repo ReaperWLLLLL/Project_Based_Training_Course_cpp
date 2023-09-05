@@ -96,7 +96,7 @@ int main(){
                 int no1Value, no2Value;
                 int pos = line.find(" ");
                 string xStr = line.substr(0, pos);
-                string yStr = line.substr(pos + 1, line.length() - pos - 1);
+                string yStr = line.substr(pos + 1, line.length() - pos - 1);//此处应该可以使用>>更为优雅地实现，见DAY2/read_elm.cpp
                 no1Value = stoi(xStr);
                 no2Value = stoi(yStr);
                 //新建对象
