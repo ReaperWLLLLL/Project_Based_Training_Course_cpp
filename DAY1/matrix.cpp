@@ -21,6 +21,7 @@ public:
     Mat operator+(const Mat &mat);
     // 重载运算符-，作用为将两个矩阵相减
     Mat operator-(const Mat &mat);
+    void operator=(const Mat &mat);
     // 重载运算符<<，作用为打印数组元素
     void operator<<(const Mat &mat);
 };
@@ -154,6 +155,24 @@ Mat Mat::operator-(const Mat &mat)
     return matSub;
 }
 
+void Mat::operator=(const Mat &mat)
+{
+    // 合法性检查
+    if (m != mat.m || n != mat.n)
+    {
+        cout << "Wrong size" << endl;
+        return;
+    }
+    m = mat.m;
+    n = mat.n;
+    data = new int[m * n];
+    for (int i = 0; i < m * n; i++)
+    {
+        data[i] = mat.data[i];
+    }
+    return;
+}
+
 void Mat::operator<<(const Mat &mat)
 {
     for (int i = 0; i < mat.m; i++)
@@ -190,7 +209,7 @@ int main()
     Mat mat7 = mat5.submat(1, 1, 2, 2);//此处会打印一个2*2的矩阵
     mat7 << mat7;
     Mat mat8 = mat7.resize(8, 8);
-    mat7 = mat5.submat(1, 1, 8, 4);//此处会提示wrong index
+    mat7 = mat5.submat(1, 1, 8, 4);//此处会提示wrong index 和 wrong size
     cout << "Below is the test of resize" << endl;
     mat8 << mat8;//此处会打印一个8*8的矩阵
 
