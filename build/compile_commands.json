@@ -1,8 +1,0 @@
-[
-{
-  "directory": "G:/study/2023SU/c++/code/build",
-  "command": "G:\\software\\mingw\\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\demo.dir\\main.cpp.obj -c G:\\study\\2023SU\\c++\\code\\main.cpp",
-  "file": "G:/study/2023SU/c++/code/main.cpp",
-  "output": "CMakeFiles/demo.dir/main.cpp.obj"
-}
-]
