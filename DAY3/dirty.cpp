@@ -58,7 +58,12 @@ void El2no::display()
     }
 }
 
-vector<El2no> El2no::find_mid(vector<El2no> el2noVec, string attr, double lowerbound, double upperbound)
+vector<El2no> El2no::
+
+
+
+
+find_mid(vector<El2no> el2noVec, string attr, double lowerbound, double upperbound)
 {
     //说实话暂未体会出匿名内部类的优雅之处，可能是在内存上有优势，但看起来是真的丑
     vector<El2no> result;
