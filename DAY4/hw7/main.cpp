@@ -1,37 +1,4 @@
-/*
-   LAPACKE_dgesv Example
-   =====================
-
-   The program computes the solution to the system of linear
-   equations with a square matrix A and multiple
-   right-hand sides B, where A is the coefficient matrix
-   and b is the right-hand side matrix:
-
-   Description
-   ===========
-
-   The routine solves for X the system of linear equations A*X = B,
-   where A is an n-by-n matrix, the columns of matrix B are individual
-   right-hand sides, and the columns of X are the corresponding
-   solutions.
-
-   The LU decomposition with partial pivoting and row interchanges is
-   used to factor A as A = P*L*U, where P is a permutation matrix, L
-   is unit lower triangular, and U is upper triangular. The factored
-   form of A is then used to solve the system of equations A*X = B.
-
-   LAPACKE Interface
-   =================
-
-   LAPACKE_dgesv (col-major, high-level) Example Program Results
-
-  -- LAPACKE Example routine (version 3.7.0) --
-  -- LAPACK is a software package provided by Univ. of Tennessee,    --
-  -- Univ. of California Berkeley, Univ. of Colorado Denver and NAG Ltd..--
-	 December 2016
-
-*/
-/* Includes */
+//我知道c和c++混写脏到不行，但懒得改，先这样
 #include <stdlib.h>
 #include <iostream>
 #include <stdio.h>
