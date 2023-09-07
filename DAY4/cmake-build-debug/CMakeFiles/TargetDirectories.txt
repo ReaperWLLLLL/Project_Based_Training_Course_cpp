@@ -1,3 +1,0 @@
-G:/study/2023SU/c++/code/DAY4/cmake-build-debug/CMakeFiles/DAY4.dir
-G:/study/2023SU/c++/code/DAY4/cmake-build-debug/CMakeFiles/edit_cache.dir
-G:/study/2023SU/c++/code/DAY4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
